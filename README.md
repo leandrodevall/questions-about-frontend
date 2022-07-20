@@ -38,3 +38,12 @@ Escopo de blocos: O JS caracteriza como bloco tudo que estiver entre chaves, sen
 Escopo léxico: nesse tipo de escopo podemos acessar variaveis declaradas dentro de funções alinhadas, ou seja, funções dentro de funções, uma função com uma variável declarada, caso essa função tenha outras funções internas, essas funções estao aptas para acessar a variavel declarada no primero nível, termo bem utilizado para esse conceito Function Nesting, bastante utilizada na programação funcional.
 
 extra: para conseguir que o var tenha algum tipo de escopo podemos utilizar variável dentro uma função retornando o valor, assim essa variável passa a ter um escopo função
+
+3.`Explique o CSS “box model” e os componentes de layout que o compõem.`<br/>
+
+Uma das primeiras coisas que aprendi quando comecei a estudar css é o box model. 
+
+box model é um conjunto de propriedades que juntas formam um caixa, então todo elemento html renderizado pelo browser tem um box model e com css podemos resetar ou alterar essa box model resultando na forma como é renderizado pelo browser, temos alguns elementos bem importantes no entendimento do box model: conteúdo, espaçamento, bordas e margens.
+
+extra: ao longo da minha jornada com css uma ferramenta bem interessante pra entender e resolver problemas de box model é saber debugar o estado atual daquele elemento na devtools, temos um box model visual e conseguimos saber exatamente que tipo de valor está sendo atribuído para qualquer propriedade daquele elemento.
+
