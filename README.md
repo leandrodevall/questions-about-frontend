@@ -47,3 +47,12 @@ box model é um conjunto de propriedades que juntas formam um caixa, então todo
 
 extra: ao longo da minha jornada com css uma ferramenta bem interessante pra entender e resolver problemas de box model é saber debugar o estado atual daquele elemento na devtools, temos um box model visual e conseguimos saber exatamente que tipo de valor está sendo atribuído para qualquer propriedade daquele elemento.
 
+4.`Como JavaScript e jQuery são diferentes?`<br/>
+
+JavaScript é uma linguagem de programação que pode ser utilizada tanto no back quanto no front end. Já o Jquery é uma biblioteca criada em cima do JS para facilitar no processo de desenvolvimento. Temos diversas bibliotecas com objetivos diferentes mas o Jquery foi criado para facilitar a manipulação no DOM.
+
+extra: com a evolução da web e da própria linguagem Javascript, muito do que se via abstraído na lib Jquery vou sendo implementada nativamente no JS.
+exemplo com Jquery: $("#about").hasClass("opened");
+exemplo com JS implementado posteriormente: about.classList.contains("anyClass")
+
+
