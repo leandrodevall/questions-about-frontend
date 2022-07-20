@@ -55,7 +55,7 @@ extra: com a evolução da web e da própria linguagem Javascript, muito do que 
 exemplo com Jquery: $("#about").hasClass("opened");
 exemplo com JS implementado posteriormente: about.classList.contains("anyClass")
 
-`O que é é um Callback Hell?`<br/>
+5.`O que é é um Callback Hell?`<br/>
 
 callback é uma convensão do JS sobre funções que usam resultado de outras funções para fazer algo, isso também é muito comum quando lidamos com assincronismo, já que precisamos esperar um resultado para seguir com alguma função, nesse contexto surgem os callbacks hell.
 
