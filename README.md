@@ -55,4 +55,11 @@ extra: com a evolução da web e da própria linguagem Javascript, muito do que 
 exemplo com Jquery: $("#about").hasClass("opened");
 exemplo com JS implementado posteriormente: about.classList.contains("anyClass")
 
+`O que é é um Callback Hell?`<br/>
+
+callback é uma convensão do JS sobre funções que usam resultado de outras funções para fazer algo, isso também é muito comum quando lidamos com assincronismo, já que precisamos esperar um resultado para seguir com alguma função, nesse contexto surgem os callbacks hell.
+
+Exemplo: temos uma função que faz uma chamada assíncrona para carregar algum dado, e esse dado vai ser usado como argumento para algumas funções também assíncronas, e dado um momento que uma função precisa esperar o resultado acabávamos tendo que fazer nesting de funções para ir utilizando os resultado conforme forem ficando disponível, resultando em uma função com muitas funções de difícil leitura e compreensão. 
+
+Todo esse contexto foi resolvido com a chegada das Promisses, sendo basicamente um recurso para lidar melhor com programação assyncronica. Uma Promisse é iniciada como uma função com duas instruções básicas, resolve e reject e a palavra reservada Promise. No Resolve callback só é executado quando temos uma resposta válida e o reject quando temos um erro. Também temos a opções de usar função utilizando a palavra reservada await na chamada da promisse, e a diferença entre os dois é que com await o JS em tempo de execução vai esperar até que a promisse seja resolvida e a proposta do then é continuar a execução até que tenhamos uma resposta para seguir com callback. Quando temos um cenário com várias promssies podemos utilizar também o promisseAll. Com isso temos mais organização e legibilidade do código e não mais toda aquela tripa de funções em funções.
 
