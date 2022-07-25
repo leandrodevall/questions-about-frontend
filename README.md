@@ -63,3 +63,23 @@ Exemplo: temos uma função que faz uma chamada assíncrona para carregar algum 
 
 Todo esse contexto foi resolvido com a chegada das Promisses, sendo basicamente um recurso para lidar melhor com programação assyncronica. Uma Promisse é iniciada como uma função com duas instruções básicas, resolve e reject e a palavra reservada Promise. No Resolve callback só é executado quando temos uma resposta válida e o reject quando temos um erro. Também temos a opções de usar função utilizando a palavra reservada await na chamada da promisse, e a diferença entre os dois é que com await o JS em tempo de execução vai esperar até que a promisse seja resolvida e a proposta do then é continuar a execução até que tenhamos uma resposta para seguir com callback. Quando temos um cenário com várias promssies podemos utilizar também o promisseAll. Com isso temos mais organização e legibilidade do código e não mais toda aquela tripa de funções em funções.
 
+6.`O que é Cross-Site Scripting (XSS)?`<br/>
+
+XSS é um ataque a sistemas web que tem como objetivo inserir código malicioso para obter informações ou orquestrar informações sendo mais comum utilizado para sequestrar sessões, tokens para obter ou elevar acessos. Existem três principais tipos de ataque de injeção de script:
+
+Persistente: O script injetado pelo atacante fica alojado de forma permanente no servidor de destino. O usuário pode acionar a carga apenas por navegar num website infectado; portanto, qualquer usuário pode executar o código malicioso sem nenhuma ação específica. Esse é um tipo bastante perigoso de ataque, pois o código pode estar alojado em diversos destinos, como campos de comentário, base de dados etc. Com isso o ataque pode inserir um código que sequestre toda a sessão do usuario e envie para outro host.
+
+Não persistente/Refletido: Neste caso, o script não estará alojado em um servidor de destino e por isso precisará ser entregue para cada vítima. Isso pode acontecer por várias formas de engenharia social, por exemplo uma mensagem de erro ou um resultado de busca. Uma forma frequente será um link distribuído por meio de esquemas de phishing. Ao acionar o servidor, por meio do link, o script será refletido e executado no navegador. Esta técnica é a mais frequente.
+
+Baseado em DOM: O terceiro tipo de ataque XSS explora o Document Object Model (DOM), que é a interface que define a leitura de HTML e XML no navegador. O script é capaz de alterar as propriedades das aplicações que executam estes tipos de extensões diretamente no navegador, portanto sem necessidade de interação com o servidor para performar o ataque. Neste caso, a falha está na validação do código HTML ou XML no navegador.
+
+Para evitar esse tipo de ataque é sempre interresante validar e sanitizar todas as entradas de dados, tanto no back quanto no front end. Encondificar dados a serem transmitidos e utilizar CDNs.
+
+O que é o CDN?
+O CDN é o Content Distribution Network, ou seja, uma Rede de Distribuição de Conteúdo.
+
+Seu objetivo é ter uma rede de servidores que armazenam réplicas do conteúdo, de modo a entregá-los para as regiões mais próximas. Além de ser uma solução muito mais rápida e eficaz, deixa o seu conteúdo bem mais seguro.
+
+Sem essa opção, o seu conteúdo está totalmente exposto, já que cada usuário interage diretamente com ele. Por outro lado, com o CDN, a arquitetura de servidores é mais forte e mais bem distribuída, descentralizando e limitando o acesso ao seu conteúdo original. Assim, os outros servidores podem sofrer os ataques de DDOS, XSS, syn flood, SQL injection e quaisquer outros, deixando o seu servidor original intacto.
+
+Além disso, este recurso também disponibiliza um firewall e todas as outras ferramentas que podem auxiliar o seu ambiente a estar completamente protegido, permitindo mais proteção para os seus dados e as informações dos clientes. Tudo isso, sem nenhum custo extra. Por isso, o CDN é a forma mais barata, conveniente e segura de trazer a maior proteção possível para o seu site contra os ataques cross-site scripting e diversos outros.
