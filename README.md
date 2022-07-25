@@ -83,3 +83,6 @@ Seu objetivo é ter uma rede de servidores que armazenam réplicas do conteúdo,
 Sem essa opção, o seu conteúdo está totalmente exposto, já que cada usuário interage diretamente com ele. Por outro lado, com o CDN, a arquitetura de servidores é mais forte e mais bem distribuída, descentralizando e limitando o acesso ao seu conteúdo original. Assim, os outros servidores podem sofrer os ataques de DDOS, XSS, syn flood, SQL injection e quaisquer outros, deixando o seu servidor original intacto.
 
 Além disso, este recurso também disponibiliza um firewall e todas as outras ferramentas que podem auxiliar o seu ambiente a estar completamente protegido, permitindo mais proteção para os seus dados e as informações dos clientes. Tudo isso, sem nenhum custo extra. Por isso, o CDN é a forma mais barata, conveniente e segura de trazer a maior proteção possível para o seu site contra os ataques cross-site scripting e diversos outros.
+
+7.`O que é Flux?`<br/>
+
