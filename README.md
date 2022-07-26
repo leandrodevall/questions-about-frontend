@@ -96,4 +96,7 @@ Dispatcher – Recebe os dados e envia para todos os stores registrados para ouv
 
 Stores – Recebe as actions contendo os dados e emite eventos, eventos estes que irão atualizar os dados dos states, fazendo com que as views sejam renderizadas novamente.
 
+8.`O que é Sass?`<br/>
+
+Sass é um pré-processador CSS que extende o css, ou seja, consegue fazer tudo que o css normal faz mas acrecendo algumas features bem interessantes como Variáveis, facilidade em utilizar BEM com o nesting, funções e mais alguns recursos que facilitam muito o dia a dia escrevendo css. Atualmente utilizo bastante BEM com Sass em aplicações Angular.
 
