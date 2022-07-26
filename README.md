@@ -86,3 +86,14 @@ Além disso, este recurso também disponibiliza um firewall e todas as outras fe
 
 7.`O que é Flux?`<br/>
 
+Flux é uma arquitetura criada pelo facebook para aplicações client side, com objetivo de facilitar e padronizar aplicações a serem mais reativas e com uma única fonte e unilateral de dados, facilitando muito a forma a qual organizamos nossas aplicações e como lidar com fontes de dados com diversos tipos de estados. Na minha experiência como desenvolvedor angular consigo utilizar esse padrão flux com rxjs e ngrx, e o mais interessante que como os conceitos por trás do flux são os mesmos, consigo alternar entre framewowrks sem muita dificuldade. Com o Flux conseguimos quebrar em quatro partes importantes:
+
+Views – A interface do usuário, renderiza e cuida das interações com o usuário, de onde partirá os callbacks para criar as actions.
+
+Actions – Eventos que passam os dados para o dispatcher.
+
+Dispatcher – Recebe os dados e envia para todos os stores registrados para ouvir àquela action.
+
+Stores – Recebe as actions contendo os dados e emite eventos, eventos estes que irão atualizar os dados dos states, fazendo com que as views sejam renderizadas novamente.
+
+
